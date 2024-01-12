@@ -1,0 +1,595 @@
+/* css */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+--text: #000;
+--bg: #fff;
+--bg: #000;
+--eva01:rgb(98,32,103);
+--eva02:rgb(85,232,79);
+--white:#fff
+}
+
+.headerimg img{
+    width: 72px;
+    height: 57px;
+    background-color: black;
+    object-fit: cover;
+    position: absolute;
+    /* display: block; */
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-left: 10px;
+}
+/* body {
+    font-family: 'Raleway', sans-serif;
+    background:linear-gradient(to top,black,55%,rgb(120, 42, 120));
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text);
+    font-size: 18px; 
+} */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.box{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn{
+    height: 35px;
+    background: rgba(76, 68, 182, 0.808);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:all .3s;
+    margin: top 10px;
+    padding:0px 10px;
+}
+
+.btn:hover{
+    opacity: 0.82;
+    text-decoration: none;
+}
+.btn-new:hover{
+    opacity: 0.82;
+    text-decoration: none;
+}
+
+.btn-new{
+    height: 35px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:all .3s;
+    margin: top 10px;
+    padding:0px 10px;
+}
+
+.right-links .btn-new{
+    text-decoration: none;
+}
+
+.btn-new:hover{
+    opacity: 0.82;
+}
+
+.submit{
+    width: 100%;
+}
+
+.links{
+    margin-bottom: 15px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --text: #fff;
+    --bg: #000;
+        }
+}
+
+h1{
+    background:linear-gradient(to right,var(--eva02),05%,var(--eva01));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 500px;
+    font-size: 24px;
+}
+
+.nav{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: black;
+    font-family: sans-serif;
+    position:relative;
+    top:0;
+    width:100vw;
+    z-index: 10000;
+    color: #fff;
+    }
+    .nav .logo{
+    font-size: 25px;
+    font-weight:black;
+    margin: 8px;
+    }
+    .nav .barnav{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    margin-right: 30px;
+    }
+    .nav .barnav div{
+    padding: 10px 20px;
+    }
+
+    h2{
+        margin-top: 60px;
+    }
+
+    .nav .barnav a{
+        text-decoration: none;
+        background-image: linear-gradient(to right, var(--eva02),10%,var(--eva01));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        color: #fff;
+    }
+
+    .nav .barnav a:hover, a:focus {
+        background-size: 100% 2px;
+    }
+
+    aside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Titule{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* .Contenedor ul{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .Contenedor  li{
+        margin: 10px;
+        padding: 10px;
+        border:  1px solid white;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom, var(--eva02),10%,var(--eva01));
+    } */
+
+   nav a{
+        text-decoration:underline;
+        color: white;
+    }
+    a:hover{
+        cursor: pointer;
+        color: black;
+    }
+
+    /* Slider
+
+    .contenedorimg{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 50vw;
+        height: 25vh;
+        background-color: orange;
+    }
+
+    .slider-container {
+        display: flex;
+        width: 100%;
+        height:100%;
+        overflow-x: scroll;
+    ;
+        border-radius: 10px;
+        }
+        
+        .slider-container img {
+            flex: 0 0 100%;
+            width: 100%;
+            object-fit: cover;
+         
+        } */
+
+        /* End of Sliders
+.info{
+        width: 100vw;
+        height: auto;
+        margin-top: 100px;
+        position: relative;
+        
+    } 
+  .info h2{
+        display: flex;
+        align-items: start;
+        margin: 10px;
+    }
+
+    .info p{
+        text-align: justify;
+    }
+
+    .info-btn{
+        border-radius: 25%;
+        color: white;
+        display: flex;
+        margin: 15px;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+    .info p{
+        text-align: justify;
+    }
+    
+    .info img{
+        margin: 10px;
+        width: 90vw;
+        height: 300px;
+    } */
+    /* Formulario de correo */
+
+    .Forms{
+        margin: 20px;
+        display: block;
+        align-content: center;
+        justify-content: center;
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .Forms input,textarea{
+        border-radius: 10px;
+    }
+
+    .Forms textarea{
+        width: 50vw;
+        height: 10vh;
+    }
+
+    .page{
+        display: block;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .container{
+    display: flex;
+    margin-top: 12px;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    }
+
+    .info p{
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        
+    }
+
+      /* otro boton */
+      .button {
+        --border-radius: 15px;
+        --border-width: 4px;
+        width: 150px;
+        height: 100px;
+        text-align:  center;
+        appearance: none;
+        position: relative;
+        padding: 1em 2em;
+        border: 0;
+        background-color: #212121;
+        font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        z-index: 2;
+       }
+       
+       .button::after {
+        --m-i: linear-gradient(#000, #000);
+        --m-o: content-box, padding-box;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: var(--border-width);
+        border-radius: var(--border-radius);
+        background-image: conic-gradient(
+               #488cfb,
+               #29dbbc,
+               #ddf505,
+               #ff9f0e,
+               #e440bb,
+               #655adc,
+               #488cfb
+           );
+        -webkit-mask-image: var(--m-i), var(--m-i);
+        mask-image: var(--m-i), var(--m-i);
+        -webkit-mask-origin: var(--m-o);
+        mask-origin: var(--m-o);
+        -webkit-mask-clip: var(--m-o);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+        filter: hue-rotate(0);
+        animation: rotate-hue linear 500ms infinite;
+        animation-play-state: paused;
+       }
+       
+       .button:hover::after {
+        animation-play-state: running;
+       }
+       
+       @keyframes rotate-hue {
+        to {
+         filter: hue-rotate(1turn);
+        }
+       }
+       
+       .button,
+       .button::after {
+        box-sizing: border-box;
+       }
+       
+       .button:active {
+        --border-width: 5px;
+       }
+       /* end of otro boton  */
+
+      .button_input {
+        --border-radius: 15px;
+        --border-width: 4px;
+        width: 150px;
+        height: 100px;
+        text-align:  center;
+        appearance: none;
+        position: relative;
+        padding: 1em 2em;
+        border: 0;
+        background-color: #212121;
+        font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        z-index: 2;
+       }
+       
+       .button_input::after {
+        --m-i: linear-gradient(#000, #000);
+        --m-o: content-box, padding-box;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: var(--border-width);
+        border-radius: var(--border-radius);
+        background-image: conic-gradient(
+               #488cfb,
+               #29dbbc,
+               #ddf505,
+               #ff9f0e,
+               #e440bb,
+               #655adc,
+               #488cfb
+           );
+        -webkit-mask-image: var(--m-i), var(--m-i);
+        mask-image: var(--m-i), var(--m-i);
+        -webkit-mask-origin: var(--m-o);
+        mask-origin: var(--m-o);
+        -webkit-mask-clip: var(--m-o);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+        filter: hue-rotate(0);
+        animation: rotate-hue linear 500ms infinite;
+        animation-play-state: paused;
+       }
+       
+       .button_input:hover::after {
+        animation-play-state: running;
+       }
+       
+       @keyframes rotate-hue {
+        to {
+         filter: hue-rotate(1turn);
+        }
+       }
+        
+      .button_input,
+       .button_input::after {
+        box-sizing: border-box;
+       }
+       
+       .button_input:active {
+        --border-width: 5px;
+       }
+       /* end of otro boton  */
+/* end css */
+
+/* Home CSS */
+.right-links a{
+    padding: 0 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.main-box .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom{
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and(max-width: 840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0px;
+    }
+}
+
+.logo a{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border: 1px solid #f9eded;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+  }
+
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+
+  .sidebar a:hover {
+    background-color: #555;
+  }
+
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+
+  /* Estilos para la tabla */
+.styled-table {
+    width: 500px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: Arial, sans-serif;
+}
+
+.styled-table thead th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+}
+
+.styled-table tbody td {
+    border-bottom: 1px solid #dddddd;
+    padding: 20px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
